@@ -1,0 +1,15 @@
+.container {
+  row-gap: 3rem;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  row-gap: 3rem;
+}
+
+@media (min-width: 568px) {
+  .container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

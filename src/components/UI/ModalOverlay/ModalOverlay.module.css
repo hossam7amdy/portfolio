@@ -1,0 +1,36 @@
+.modal {
+  position: fixed;
+  top: 30vh;
+  left: 10%;
+  width: 80%;
+  z-index: var(--z-modal);
+  overflow: hidden;
+  padding: 1rem;
+}
+
+.header {
+  font-size: var(--small-font-size);
+  font-weight: var(--font-medium);
+  color: var(--first-color);
+  margin-bottom: var(--mb-0-75);
+}
+
+.body {
+  font-size: var(--normal-font-size);
+  margin-bottom: var(--mb-2);
+}
+
+.btn {
+  display: block;
+  margin-left: auto;
+  padding: 6px 12px;
+  border-radius: 5rem;
+  border: 2px solid;
+  color: var(--first-color);
+}
+
+@media (max-width: 350px) {
+  .modal {
+    top: 10vh;
+  }
+}

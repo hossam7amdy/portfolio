@@ -1,0 +1,21 @@
+.title {
+  font-size: var(--h1-font-size);
+  color: var(--title-color);
+}
+
+.subtitle {
+  display: block;
+  font-size: var(--small-font-size);
+  margin-bottom: var(--mb-3);
+}
+
+.title,
+.subtitle {
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .subtitle {
+    margin-bottom: 4rem;
+  }
+}

@@ -1,0 +1,14 @@
+.tab {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  color: var(--text-color);
+  font-size: var(--h3-font-size);
+  font-weight: var(--font-medium);
+  transition: 0.3s;
+}
+
+.tab:hover,
+.active {
+  color: var(--first-color);
+}

@@ -1,0 +1,33 @@
+.container {
+  position: relative;
+}
+
+.projects {
+  display: flex;
+  overflow-x: hidden;
+}
+
+.arrowL,
+.arrowR {
+  position: absolute;
+  top: 45%;
+  color: var(--text-color);
+  transition: 0.3s;
+}
+
+.icon {
+  font-size: 2.5rem;
+}
+
+.arrowL:hover,
+.arrowR:hover {
+  color: var(--first-color-alt);
+}
+
+.arrowL {
+  left: -0.5rem;
+}
+
+.arrowR {
+  right: -0.5rem;
+}

@@ -1,0 +1,20 @@
+.content {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.icon {
+  font-size: 2rem;
+  margin-top: var(--mb-0-25);
+  color: var(--first-color);
+}
+
+.title {
+  font-size: var(--h3-font-size);
+  font-weight: var(--font-medium);
+}
+
+.subtitle {
+  font-size: var(--small-font-size);
+  color: var(--text-color-light);
+}

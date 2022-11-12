@@ -1,0 +1,26 @@
+.blob {
+  width: 200px;
+  fill: var(--first-color);
+}
+
+.blob-img {
+  width: 170px;
+}
+
+@media (min-width: 568px) {
+  .img {
+    order: 1;
+  }
+}
+
+@media (min-width: 768px) {
+  .blob {
+    width: 270px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .blob {
+    width: 320px;
+  }
+}

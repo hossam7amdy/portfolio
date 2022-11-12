@@ -1,0 +1,22 @@
+.socials {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  align-self: center;
+}
+
+.icon {
+  padding: 0;
+  color: var(--first-color);
+  background-color: var(--body-color);
+}
+
+.icon:hover {
+  color: var(--first-color-alt);
+}
+
+@media (min-width: 1024px) {
+  .socials {
+    transform: translateX(-6rem);
+  }
+}

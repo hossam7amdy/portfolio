@@ -1,0 +1,19 @@
+.link {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  background-color: var(--first-color);
+  color: #fff;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  font-weight: var(--font-medium);
+}
+
+.icon {
+  font-size: 1.25rem;
+  transition: 0.3s;
+}
+
+.link:hover .icon {
+  transform: translateX(0.15rem);
+}
