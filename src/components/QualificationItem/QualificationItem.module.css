@@ -20,6 +20,16 @@
   color: var(--text-color-light);
 }
 
+.link {
+  margin-top: var(--mb-0-75);
+  padding: 3px 7px;
+  border: 1px solid;
+  border-radius: 5rem;
+  color: var(--text-color);
+  font-size: var(--smaller-font-size);
+  background-color: var(--body-color);
+}
+
 .rounder {
   display: inline-block;
   width: 13px;
