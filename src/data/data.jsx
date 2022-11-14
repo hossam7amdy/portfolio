@@ -99,7 +99,7 @@ export const NAV_LIST = [
   { name: "Skills", Icon: FiFileText },
   { name: "Services", Icon: HiOutlineBriefcase },
   { name: "Portfolio", Icon: ImFilePicture },
-  { name: "Contactme", Icon: BiSend },
+  { name: "ContactMe", Icon: BiSend },
 ];
 
 export const SERVICES_LIST = [
@@ -179,7 +179,7 @@ export const CONTACT = [
   {
     Icon: BsTelephone,
     title: "Contact Me",
-    subtitle: "+20-100-5861-198",
+    subtitle: "+20 100 5861 198",
   },
   {
     Icon: CiMail,
