@@ -1,9 +1,10 @@
 import styles from "./Services.module.css";
+
+import { SERVICES_LIST } from "../../data/data";
 import { SectionTitle } from "../../components/SectionTitle/SectionTitle";
 import { ServiceItem } from "../../components/ServiceItem/ServiceItem";
 import { Container } from "../../layout/Container/Container";
 import { Section } from "../../layout/Section/Section";
-import { SERVICES_LIST } from "../../data/data";
 
 export const Services = () => {
   return (

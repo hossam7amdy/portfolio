@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { BsArrowRightShort } from "react-icons/bs";
+import { AiOutlineCheckCircle } from "react-icons/ai";
 
 import styles from "./ServiceItem.module.css";
 import { Card } from "../UI/Card/Card";
@@ -10,7 +11,7 @@ const ContentList = (content) => {
     <ul>
       {content.map((item, idx) => (
         <li key={idx} className={styles["service-item"]}>
-          {item}
+          <AiOutlineCheckCircle className={styles["item-icon"]} /> {item}
         </li>
       ))}
     </ul>
@@ -35,7 +36,7 @@ export const ServiceItem = ({ Icon, title, content }) => {
 
   return (
     <>
-      {isOpen && <Modal header={title} body={body} onConfirm={onClose} />}
+      <Modal header={title} body={body} onClose={onClose} isOpen={isOpen} />
       <Card className={styles.content}>
         <Icon className={styles.icon} />
         <h3 className={styles.title}>
