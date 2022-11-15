@@ -36,6 +36,7 @@ export const Portfolio = () => {
               decription={project.description}
               demo={project.demo}
               github={project.github}
+              tools={project.tools}
             />
           ))}
         </ul>

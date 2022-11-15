@@ -29,9 +29,27 @@
   text-align: center;
 }
 
+.tools {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.25rem;
+}
+
+.tool {
+  padding: 2px 4px;
+  border-radius: 5px;
+  font-size: var(--small-font-size);
+  background-color: var(--input-color);
+}
+
 .links {
   display: flex;
   gap: 0.5rem;
+}
+
+.link {
+  font-size: var(--small-font-size);
+  padding: 5px 10px;
 }
 
 @media (min-width: 768px) {

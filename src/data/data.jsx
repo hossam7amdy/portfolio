@@ -12,6 +12,7 @@ import rawaaDashboard from "../assets/rawa-dashboard.png";
 import omnifood from "../assets/omnifood.png";
 import forkify from "../assets/forkify.png";
 import rawaa from "../assets/rawaafood.png";
+import next from "../assets/next.png";
 
 export const SKILLS = [
   {
@@ -147,6 +148,7 @@ export const PROJECTS = [
     image: rawaa,
     demo: "https://rawaa-app.vercel.app/",
     github: "https://github.com/hossam7amdy/rawaa-app",
+    tools: ["react.js", "redux toolkit", "chakra ui"],
   },
   {
     name: "Rawaa Dashboard",
@@ -155,6 +157,16 @@ export const PROJECTS = [
     image: rawaaDashboard,
     demo: "https://rawaa-dashboard.vercel.app/",
     github: "https://github.com/hossam7amdy/rawaa-dashboard",
+    tools: ["react.js", "react query", "chakra ui"],
+  },
+  {
+    name: "Next Meetups",
+    description:
+      "Simple app to save and manage your upcoming meetings and trips.",
+    image: next,
+    demo: "https://meetups-manager-blond.vercel.app/",
+    github: "https://github.com/hossam7amdy/meetups-manager",
+    tools: ["next.js", "mongoDB"],
   },
   {
     name: "Forkify",
@@ -163,6 +175,7 @@ export const PROJECTS = [
     demo: "https://forkify-hossam.netlify.app/",
     github:
       "https://github.com/hossam7amdy/learning-projects/tree/main/Javascript/04-forkify",
+    tools: ["html/css", "javascript", "rest"],
   },
   {
     name: "Omnifood",
@@ -172,6 +185,7 @@ export const PROJECTS = [
     demo: "https://omnifood-hossam.netlify.app/",
     github:
       "https://github.com/hossam7amdy/learning-projects/tree/main/HTML-CSS/omnifood",
+    tools: ["html/css", "javascript"],
   },
 ];
 
