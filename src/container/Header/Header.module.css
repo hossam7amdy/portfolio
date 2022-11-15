@@ -50,6 +50,7 @@
   .header {
     top: 0;
     bottom: initial;
+    background-color: var(--body-color);
   }
 
   .logo {

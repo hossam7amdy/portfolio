@@ -1,5 +1,6 @@
 .container {
-  grid-template-columns: max-content 1fr;
+  grid-template-columns: 0.25fr 1fr;
+  justify-items: center;
   row-gap: 1rem;
   padding-top: var(--mb-2-5);
 }

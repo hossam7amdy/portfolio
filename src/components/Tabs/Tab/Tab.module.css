@@ -1,7 +1,8 @@
 .tab {
   display: flex;
-  align-items: center;
   gap: 0.25rem;
+  align-items: center;
+  text-align: start;
   color: var(--text-color);
   font-size: var(--h3-font-size);
   font-weight: var(--font-medium);
