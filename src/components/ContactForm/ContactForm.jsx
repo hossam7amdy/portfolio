@@ -11,7 +11,7 @@ export const ContactForm = () => {
       honeypotName="bot-field"
       onSuccess={(_, context) => context.formRef.current.reset()}
     >
-      {({ handleChange, success, error, formRef }) => (
+      {({ handleChange, success, error }) => (
         <>
           <div className={styles.content}>
             <label htmlFor="full-name" className={styles.label}>
@@ -23,7 +23,7 @@ export const ContactForm = () => {
               minLength={5}
               maxLength={50}
               name="full-name"
-              placeholder="Full Name"
+              // placeholder="Full Name"
               onChange={handleChange}
               className={styles.input}
             />
@@ -41,7 +41,7 @@ export const ContactForm = () => {
               maxLength={50}
               onChange={handleChange}
               className={styles.input}
-              placeholder="example@gmail.com"
+              // placeholder="example@gmail.com"
             />
           </div>
 
@@ -57,7 +57,7 @@ export const ContactForm = () => {
               name="project"
               onChange={handleChange}
               className={styles.input}
-              placeholder="Project Name"
+              // placeholder="Project Name"
             />
           </div>
 
@@ -73,7 +73,7 @@ export const ContactForm = () => {
               maxLength={500}
               onChange={handleChange}
               className={styles.input}
-              placeholder="Your Message"
+              // placeholder="Your Message"
             />
           </div>
 
