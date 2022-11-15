@@ -1,12 +1,10 @@
 .service {
-  display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 1.5rem;
 }
 
-@media (max-width: 350px) {
+@media (max-width: 370px) {
   .service {
-    grid-template-columns: max-content;
+    grid-template-columns: 90%;
     justify-content: center;
   }
 }

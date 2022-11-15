@@ -11,17 +11,15 @@ export const Services = () => {
     <Section id="services">
       <SectionTitle title="Services" subtitle="What I offer" />
 
-      <Container>
-        <div className={styles.service}>
-          {SERVICES_LIST.map((service, idx) => (
-            <ServiceItem
-              key={idx}
-              Icon={service.Icon}
-              title={service.title}
-              content={service.content}
-            />
-          ))}
-        </div>
+      <Container className={`${styles.service} grid`}>
+        {SERVICES_LIST.map((service, idx) => (
+          <ServiceItem
+            key={idx}
+            Icon={service.Icon}
+            title={service.title}
+            content={service.content}
+          />
+        ))}
       </Container>
     </Section>
   );
