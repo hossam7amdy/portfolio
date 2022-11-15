@@ -1,7 +1,7 @@
 .container {
   justify-items: center;
-  row-gap: 3.5rem;
-  padding: 1rem 1rem 0.25rem;
+  gap: 2rem;
+  padding: 1rem 0;
   background-color: var(--first-color-second);
 }
 
@@ -19,7 +19,7 @@
   display: flex;
   align-items: center;
   flex-direction: column;
-  gap: 1.5rem;
+  gap: 1rem;
 }
 
 .links a {
@@ -62,7 +62,6 @@
 @media (min-width: 768px) {
   .container {
     grid-template-columns: 1fr 1.5fr 1fr;
-    padding: 3rem 0 3.5rem;
   }
 
   .links {
@@ -71,7 +70,6 @@
   }
 
   .copy {
-    margin-top: 4.5rem;
     grid-column: span 3;
   }
 }
