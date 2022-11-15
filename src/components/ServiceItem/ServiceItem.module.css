@@ -41,14 +41,15 @@
 }
 
 .service-item {
-  display: flex;
-  gap: 0.5rem;
+  position: relative;
   margin-bottom: var(--mb-1-5);
 }
 
 .item-icon {
+  position: absolute;
+  top: 3px;
+  left: -1.25rem;
   font-size: 1rem;
-  margin-top: 3px;
   color: var(--first-color);
 }
 
