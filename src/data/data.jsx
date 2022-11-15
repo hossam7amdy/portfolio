@@ -135,7 +135,7 @@ export const SERVICES_LIST = [
     title: "Maintenance and Support",
     content: [
       "Renders maintenance and support services for consistent and stable performance of applications.",
-      "We can also update your app functionality on demand.",
+      "I can also update your app functionality on demand.",
     ],
   },
 ];
