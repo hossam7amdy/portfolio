@@ -23,9 +23,7 @@ export const ModalOverlay = ({ header, body, onClose, isOpen }) => {
         <header className={styles.header}>
           <h2>{header}</h2>
         </header>
-        <div className={styles.body}>
-          <p>{body}</p>
-        </div>
+        <div className={styles.body}>{body}</div>
         <footer className={styles.actions}>
           <button className={styles.btn} onClick={onClose}>
             Close
