@@ -2,6 +2,7 @@ import { Header } from "./Header/Header";
 import { Home } from "./Home/Home";
 import { About } from "./About/About";
 import { Qualification } from "./Qualification/Qualification";
+import { Achievements } from "./Achievements/Achievements";
 import { Services } from "./Services/Services";
 import { Portfolio } from "./Portfolio/Portfolio";
 import { Skills } from "./Skills/Skills";
@@ -14,6 +15,7 @@ export {
   About,
   Skills,
   Qualification,
+  Achievements,
   Services,
   Portfolio,
   Contact,
