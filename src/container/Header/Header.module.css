@@ -21,15 +21,13 @@
   align-items: center;
 }
 
-.logo,
 .toggle-icon {
   color: var(--title-color);
   transition: 0.5s;
 }
 
 .logo {
-  font-size: var(--h2-font-size);
-  font-weight: var(--font-medium);
+  width: 2rem;
 }
 
 .toggle-icon {
@@ -54,7 +52,7 @@
   }
 
   .logo {
-    font-size: var(--h2-font-size);
+    width: 2.5rem;
   }
 
   .nav {
