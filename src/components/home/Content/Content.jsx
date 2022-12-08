@@ -8,9 +8,9 @@ export const Content = () => {
   return (
     <div className={styles.content}>
       <h2 className={styles.title}>Hi, I'm Hossam</h2>
-      <h3 className={styles.subtitle}>Frontend developer</h3>
+      <h3 className={styles.subtitle}>Full Stack Developer</h3>
       <p className={styles.description}>
-        I make reactive web application, producing high level quality work.
+        I make reactive web application, producing high quality work.
       </p>
 
       <IconLink to="#contactme" text="Contact Me" Icon={BiSend} />

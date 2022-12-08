@@ -35,6 +35,17 @@ export const Achievements = () => {
           <TabPanels>
             <Panel id={0}>
               <PanelItem
+                title="Complete NodeJS Developer in 2023 (GraphQL, MongoDB)"
+                subtitle={
+                  <>
+                    <SiUdemy /> Udemy
+                  </>
+                }
+                date="Dec 2022 - No Expiration Date"
+                link="https://www.udemy.com/certificate/UC-c3e1452d-7d8e-4211-af18-45b0548ba648/"
+                text="Show credential"
+              />
+              <PanelItem
                 title="React - The Complete Guide (incl Hooks, React Router, Redux)"
                 subtitle={
                   <>
@@ -44,6 +55,7 @@ export const Achievements = () => {
                 date="Oct 2022 - No Expiration Date"
                 link="https://www.udemy.com/certificate/UC-1a1ee55d-18c8-43a1-9264-b1c9ba1dc6a5/"
                 text="Show credential"
+                trackOnLeft={true}
               />
               <PanelItem
                 title="The Complete JavaScript Course 2022: From Zero to Expert!"
@@ -55,7 +67,6 @@ export const Achievements = () => {
                 date="July 2022 - No Expiration Date"
                 link="https://www.udemy.com/certificate/UC-3596dff2-c77a-4833-a101-0f3a28520615/"
                 text="Show credential"
-                trackOnLeft={true}
               />
               <PanelItem
                 title="Build Responsive Real-World Websites with HTML and CSS"
@@ -67,6 +78,7 @@ export const Achievements = () => {
                 date="May 2022 - No Expiration Date"
                 link="https://www.udemy.com/certificate/UC-d3aa24a3-1cfe-4c17-b6b6-5d300c399ca0/"
                 text="Show credential"
+                trackOnLeft={true}
               />
             </Panel>
             <Panel id={1}>
@@ -94,7 +106,7 @@ export const Achievements = () => {
                 text="Show profile"
               />
               <PanelItem
-                title="135+ Problems"
+                title="145+ Problems"
                 subtitle={
                   <>
                     <SiLeetcode /> LeetCode

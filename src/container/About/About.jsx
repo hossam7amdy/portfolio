@@ -19,9 +19,9 @@ export const About = () => {
 
         <div>
           <p className={styles["about-description"]}>
-            A passionate competitive-programmer. Specialized in front-end web
-            development using ReactJS can develop new user-facing features,
-            build reusable codes and optimize page loading times.
+            A passionate competitive-programmer. Specialized in web development
+            with MERN stack technologies I can design, develop, and maintain
+            fully-fledged and functioning platforms with databases or servers.
           </p>
           <div className={styles.info}>
             <div>

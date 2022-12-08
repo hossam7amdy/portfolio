@@ -1,8 +1,8 @@
 import { BiSend } from "react-icons/bi";
-import { FaReact } from "react-icons/fa";
 import { TbServer2 } from "react-icons/tb";
 import { CiGrid31, CiMail } from "react-icons/ci";
 import { FiHome, FiFileText } from "react-icons/fi";
+import { MdOutlineDynamicForm } from "react-icons/md";
 import { ImFilePicture, ImMoveUp } from "react-icons/im";
 import { AiOutlineCode, AiOutlineUser } from "react-icons/ai";
 import { BsBraces, BsCode, BsTelephone } from "react-icons/bs";
@@ -75,19 +75,19 @@ export const SKILLS = [
     content: [
       {
         name: "Node.JS",
-        progress: 50,
+        progress: 75,
       },
       {
-        name: "Express.JS",
-        progress: 40,
+        name: "MongoDB",
+        progress: 70,
       },
       {
-        name: "SQL Server",
-        progress: 60,
+        name: "Relational DB",
+        progress: 80,
       },
       {
         name: "AWS",
-        progress: 10,
+        progress: 15,
       },
     ],
   },
@@ -104,20 +104,20 @@ export const NAV_LIST = [
 
 export const SERVICES_LIST = [
   {
-    Icon: FaReact,
-    title: "ReactJS Development",
+    Icon: MdOutlineDynamicForm,
+    title: "Dynamic Websites Development",
     content: [
-      "Provide React.js Development From Scratch.",
-      "Leverage our React software development services to build a project from start to go.",
+      "Flexible and quick change on the user’s computer without new page request to the web browser.",
+      "Provide ability to simply update and add new content to the site.",
       "Share your project requirements for the perfect mix of talent and expertise.",
     ],
   },
   {
     Icon: ImMoveUp,
-    title: "Migration to React",
+    title: "Migrating Apps from Legacy Systems",
     content: [
-      "Assists in adopting React functionality.",
-      "Wrapping the code of your existing architecture into React components.",
+      "Assists in adopting system functionality.",
+      "Wrapping the code of your existing architecture into modules.",
       "Update your application while eliminating challenges and issues.",
     ],
   },
