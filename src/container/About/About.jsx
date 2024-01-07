@@ -1,6 +1,6 @@
 import { MdOutlineFileDownload } from "react-icons/md";
 
-import cv from "../../assets/Hossam-CV.pdf";
+import cv from "../../assets/Hossam-Hamdy.pdf";
 import styles from "./About.module.css";
 import aboutImg from "../../assets/about.jpg";
 
