@@ -2,7 +2,6 @@ import { MdOutlineFileDownload } from "react-icons/md";
 
 import cv from "../../assets/Hossam-Hamdy.pdf";
 import styles from "./About.module.css";
-import aboutImg from "../../assets/about.jpg";
 
 import { SectionTitle } from "../../components/SectionTitle/SectionTitle";
 import { Container } from "../../layout/Container/Container";
@@ -14,14 +13,21 @@ export const About = () => {
     <Section id="about">
       <SectionTitle title="About Me" subtitle="Introduction" />
 
-      <Container className={`${styles.container} grid`} centerContent={true}>
-        <img src={aboutImg} alt="Hossam" className={styles.img} />
+      <Container className={`${styles.container}`} centerContent={true}>
+        {/* <img src={aboutImg} alt="Hossam" className={styles.img} /> */}
 
         <div>
           <p className={styles["about-description"]}>
-            A passionate competitive-programmer. Specialized in web development
-            with MERN stack technologies I can design, develop, and maintain
-            fully-fledged and functioning platforms with databases or servers.
+            Dedicated and competitive, I specialize in web development with a
+            focus on the MERN stack. My expertise lies in designing, developing,
+            and maintaining robust platforms complete with databases and
+            servers. As a Full Stack Engineer, I've navigated the realms of
+            real-time chat and video calls, incorporating Firebase for push
+            notifications and WebSockets for in-app alerts. Noteworthy projects
+            include implementing user authentication with AWS Cognito,
+            optimizing file storage solutions using AWS S3, and integrating an
+            image annotator with Google Maps, backed by AWS Cognito for secure
+            user authentication.
           </p>
           <div className={styles.info}>
             <div>

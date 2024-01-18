@@ -68,6 +68,7 @@ export const ContactForm = () => {
             <textarea
               required
               rows={7}
+              cols={7}
               name="message"
               minLength={10}
               maxLength={500}

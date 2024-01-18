@@ -43,10 +43,16 @@ export const Qualification = () => {
             </Panel>
             <Panel id={1}>
               <PanelItem
-                title="Graduation Project"
-                subtitle="Cairo University"
-                date="Feb 2022 - Oct 2022"
+                title="Full Stack Developer"
+                subtitle="Revca"
+                date="Apr 2023 - Present"
                 trackOnLeft={true}
+              />
+              <PanelItem
+                title="Backend Developer"
+                subtitle="American Academy"
+                date="Nov 2022 - Dec 2023"
+                trackOnLeft={false}
               />
             </Panel>
           </TabPanels>

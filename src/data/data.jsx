@@ -7,6 +7,7 @@ import { ImFilePicture, ImMoveUp } from "react-icons/im";
 import { AiOutlineCode, AiOutlineUser } from "react-icons/ai";
 import { BsBraces, BsCode, BsTelephone } from "react-icons/bs";
 import { HiOutlineBriefcase, HiOutlineLocationMarker } from "react-icons/hi";
+import { VscTools } from "react-icons/vsc";
 
 import rawaaDashboard from "../assets/rawa-dashboard.png";
 import omnifood from "../assets/omnifood.png";
@@ -47,16 +48,16 @@ export const SKILLS = [
     Icon: BsBraces,
     content: [
       {
-        name: "HTML",
+        name: "HTML & CSS",
         progress: 90,
       },
       {
-        name: "CSS",
-        progress: 80,
+        name: "JavaScript",
+        progress: 70,
       },
       {
-        name: "JavaScript",
-        progress: 60,
+        name: "Ant Design",
+        progress: 80,
       },
       {
         name: "Chakra UI",
@@ -70,7 +71,7 @@ export const SKILLS = [
   },
   {
     title: "Backend developer",
-    subtitle: "Entry Level",
+    subtitle: "Experienced",
     Icon: TbServer2,
     content: [
       {
@@ -78,16 +79,47 @@ export const SKILLS = [
         progress: 75,
       },
       {
+        name: "Express.JS",
+        progress: 70,
+      },
+      {
         name: "MongoDB",
         progress: 70,
       },
       {
-        name: "Relational DB",
+        name: "MySQL",
         progress: 80,
       },
       {
-        name: "AWS",
-        progress: 15,
+        name: "RESTful API",
+        progress: 80,
+      },
+    ],
+  },
+  {
+    title: "Tools & Technologies",
+    subtitle: "Experienced",
+    Icon: VscTools,
+    content: [
+      {
+        name: "Git & Github",
+        progress: 80,
+      },
+      {
+        name: "ORM [Mongoose, Sequelize]",
+        progress: 70,
+      },
+      {
+        name: "AWS Web Services",
+        progress: 80,
+      },
+      {
+        name: "Unit Testing [Jest]",
+        progress: 70,
+      },
+      {
+        name: "CI/CD",
+        progress: 70,
       },
     ],
   },

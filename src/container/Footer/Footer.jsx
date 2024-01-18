@@ -10,7 +10,7 @@ export const Footer = () => {
     <footer className={`${styles.container} grid`}>
       <div>
         <h1 className={styles.title}>Hossam</h1>
-        <span className={styles.subtitle}>Frontend Developer</span>
+        <span className={styles.subtitle}>Full Stack Developer</span>
       </div>
 
       <ul className={styles.links}>
