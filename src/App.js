@@ -1,4 +1,5 @@
 import "./App.css";
+import { Analytics } from "@vercel/analytics/react";
 
 import {
   Header,
@@ -29,6 +30,7 @@ function App() {
         <Contact />
       </main>
       <Footer />
+      <Analytics />
     </ThemeProvider>
   );
 }
