@@ -1,14 +1,12 @@
-.img {
-  width: 200px;
-  height: auto;
-  border-radius: 0.5rem;
-  justify-self: center;
-  align-self: center;
+.about-content {
+  display: flex;
+  gap: var(--mb-2);
+  align-items: center;
+  margin-bottom: var(--mb-2-5);
 }
 
 .about-description {
-  text-align: center;
-  margin-bottom: var(--mb-2-5);
+  text-align: start;
 }
 
 .info {
