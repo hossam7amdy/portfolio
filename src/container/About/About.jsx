@@ -15,8 +15,8 @@ export const About = () => {
 
       <Container className={`${styles.container}`} centerContent={true}>
         <div className={styles["about-content"]}>
-          <div style={{ flex: 3 }}>
-            <p className={styles["about-description"]}>
+          <div className={styles["about-description"]}>
+            <p>
               Dedicated and competitive, I specialize in web development with a
               focus on the MERN stack. My expertise lies in designing,
               developing, and maintaining robust platforms complete with
@@ -30,7 +30,7 @@ export const About = () => {
             </p>
           </div>
 
-          <div style={{ flex: 2 }}>
+          <div className={styles["about-action"]}>
             <div className={styles.info}>
               <div>
                 <p className={styles["info-title"]}>10+</p>
