@@ -6,7 +6,6 @@ import { AiOutlineAppstore } from "react-icons/ai";
 import styles from "./Header.module.css";
 import { Navbar } from "../../components/Navbar/Navbar";
 import { ColorModeSwitcher } from "../../components/ColorModeSwitcher/ColorModeSwitcher";
-import Image from "next/image";
 
 export const Header = () => {
   const [show, setShow] = useState(false);
@@ -14,7 +13,7 @@ export const Header = () => {
   return (
     <header className={styles.header}>
       <a href="#home" className={styles.logo}>
-        <Image src={"/logo.png"} alt="logo" width={50} height={50} />
+        <img src="/logo.png" alt="logo" />
       </a>
       <nav className={styles.nav}>
         <Navbar show={show} onClose={() => setShow(false)} />
