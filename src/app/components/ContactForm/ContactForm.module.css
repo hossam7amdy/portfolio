@@ -46,3 +46,8 @@
 .btn:hover .icon {
   transform: translateX(0.25rem);
 }
+
+.btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
