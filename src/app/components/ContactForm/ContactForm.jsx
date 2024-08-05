@@ -1,96 +1,108 @@
+"use client";
+
+import { useRef } from "react";
+import { useFormStatus, useFormState } from "react-dom";
 import { RiMailSendLine } from "react-icons/ri";
-import { NetlifyForm, Honeypot } from "react-netlify-forms";
 
 import styles from "./ContactForm.module.css";
+import { sendEmail } from "../../actions";
+
+const initialState = { message: null, errors: {} };
 
 export const ContactForm = () => {
+  const formRef = useRef(null);
+  const [state, dispatch] = useFormState(sendEmail, initialState);
+
+  const handleSubmit = async (formData) => {
+    dispatch(formData);
+    formRef.current?.reset();
+  };
+
   return (
-    <NetlifyForm
-      name="Contact"
-      action="/thanks"
-      honeypotName="bot-field"
-      onSuccess={(_, context) => context.formRef.current.reset()}
-    >
-      {({ handleChange, success, error }) => (
-        <>
-          <div className={styles.content}>
-            <label htmlFor="full-name" className={styles.label}>
-              Name
-            </label>
-            <input
-              required
-              type="text"
-              minLength={5}
-              maxLength={50}
-              name="full-name"
-              // placeholder="Full Name"
-              onChange={handleChange}
-              className={styles.input}
-            />
-          </div>
+    <form ref={formRef} name="contact-me" action={handleSubmit}>
+      <div className={styles.content}>
+        <label htmlFor="name" className={styles.label}>
+          Name
+        </label>
+        <input
+          id="name"
+          required
+          type="text"
+          minLength={5}
+          maxLength={50}
+          name="name"
+          // placeholder="Full Name"
+          className={styles.input}
+        />
+      </div>
 
-          <div className={styles.content}>
-            <label htmlFor="email" className={styles.label}>
-              Email
-            </label>
-            <input
-              required
-              name="email"
-              type="email"
-              minLength={5}
-              maxLength={50}
-              onChange={handleChange}
-              className={styles.input}
-              // placeholder="example@gmail.com"
-            />
-          </div>
+      <div className={styles.content}>
+        <label htmlFor="email" className={styles.label}>
+          Email
+        </label>
+        <input
+          id="email"
+          required
+          name="email"
+          type="email"
+          minLength={5}
+          maxLength={50}
+          className={styles.input}
+          // placeholder="example@gmail.com"
+        />
+      </div>
 
-          <div className={styles.content}>
-            <label htmlFor="project" className={styles.label}>
-              Project
-            </label>
-            <input
-              required
-              type="text"
-              minLength={5}
-              maxLength={50}
-              name="project"
-              onChange={handleChange}
-              className={styles.input}
-              // placeholder="Project Name"
-            />
-          </div>
+      <div className={styles.content}>
+        <label htmlFor="project" className={styles.label}>
+          Project
+        </label>
+        <input
+          id="project"
+          required
+          type="text"
+          minLength={5}
+          maxLength={50}
+          name="project"
+          className={styles.input}
+          // placeholder="Project Name"
+        />
+      </div>
 
-          <div className={styles.content}>
-            <label htmlFor="message" className={styles.label}>
-              Message
-            </label>
-            <textarea
-              required
-              rows={7}
-              cols={7}
-              name="message"
-              minLength={10}
-              maxLength={500}
-              onChange={handleChange}
-              className={styles.input}
-              // placeholder="Your Message"
-            />
-          </div>
+      <div className={styles.content}>
+        <label htmlFor="message" className={styles.label}>
+          Message
+        </label>
+        <textarea
+          id="message"
+          required
+          rows={7}
+          cols={7}
+          name="message"
+          minLength={10}
+          maxLength={500}
+          className={styles.input}
+          // placeholder="Your Message"
+        />
+      </div>
 
-          <Honeypot />
-          {success && <p style={{ padding: 5 }}>Thanks for contacting me!</p>}
-          {error && (
-            <p style={{ color: "red", padding: 5 }}>
-              Sorry, we could not reach our servers. Please try again later.
-            </p>
-          )}
-
-          <button type="submit" className={styles.btn}>
-            Send Message <RiMailSendLine className={styles.icon} />
-          </button>
-        </>
+      {state.message && (
+        <p style={{ color: "red", padding: 5 }} key={state.message}>
+          {state.message}
+        </p>
       )}
-    </NetlifyForm>
+
+      <SubmitButton />
+    </form>
+  );
+};
+
+const SubmitButton = () => {
+  const { pending } = useFormStatus();
+
+  return (
+    <button type="submit" className={styles.btn} disabled={pending}>
+      {pending ? "Sending..." : "Send Message"}{" "}
+      <RiMailSendLine className={styles.icon} />
+    </button>
   );
 };
