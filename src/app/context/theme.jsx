@@ -30,9 +30,11 @@ export const ThemeProvider = (props) => {
   }, [theme]);
 
   const toggleTheme = () => {
-    localStorage.setItem("theme", theme);
+    const newTheme = theme === "light" ? "dark" : "light";
 
-    setTheme((prev) => (prev === "light" ? "dark" : "light"));
+    localStorage.setItem("theme", newTheme);
+
+    setTheme(newTheme);
   };
 
   const themeProvider = {
