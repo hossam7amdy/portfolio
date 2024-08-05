@@ -126,7 +126,7 @@ export const NAV_LIST = [
   { name: "Skills", Icon: FiFileText },
   { name: "Services", Icon: HiOutlineBriefcase },
   { name: "Portfolio", Icon: ImFilePicture },
-  { name: "ContactMe", Icon: BiSend },
+  { name: "Contact me", Icon: BiSend },
 ];
 
 export const SERVICES_LIST = [

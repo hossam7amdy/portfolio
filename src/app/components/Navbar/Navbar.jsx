@@ -2,6 +2,7 @@ import { CgClose } from "react-icons/cg";
 
 import styles from "./Navbar.module.css";
 import { NAV_LIST } from "../../data/data";
+import Link from "next/link";
 
 export const Navbar = ({ show, onClose }) => {
   const navClasses = `${styles.menu} ${show ? styles["show-menu"] : ""}`;
@@ -11,14 +12,14 @@ export const Navbar = ({ show, onClose }) => {
       <ul className={`${styles.list} grid`}>
         {NAV_LIST.map((navItem, idx) => (
           <li key={idx}>
-            <a
-              href={`#${navItem.name.toLowerCase()}`}
+            <Link
+              href={`#${navItem.name.toLowerCase().replaceAll(" ", "")}`}
               className={styles.navLink}
               onClick={onClose}
             >
               <navItem.Icon className={styles.icon} />
               {navItem.name}
-            </a>
+            </Link>
           </li>
         ))}
       </ul>
