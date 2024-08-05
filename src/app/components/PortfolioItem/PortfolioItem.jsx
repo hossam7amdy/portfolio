@@ -3,6 +3,7 @@ import { AiFillGithub } from "react-icons/ai";
 
 import { IconLink } from "../UI/IconLink/IconLink";
 import styles from "./PortfolioItem.module.css";
+import Image from "next/image";
 
 export const PortfolioItem = ({
   index,
@@ -18,7 +19,13 @@ export const PortfolioItem = ({
       className={styles.project}
       style={{ transform: `translateX(${index * -100}%)` }}
     >
-      <img className={styles.img} src={img} alt={name} />
+      <Image
+        className={styles.img}
+        src={img}
+        alt={name}
+        width={650}
+        height={350}
+      />
       <div className={styles.content}>
         <h3 className={styles.title}>{name}</h3>
         <p className={styles.decription}>{decription}</p>
