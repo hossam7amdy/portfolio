@@ -1,13 +1,14 @@
 # Portfolio Website
 
-This is my official portfolio website. It is a simple static website built using ReactJS and hosted on Vercel.
+This is my official portfolio website. It is a simple static website built using ReactJS  
+and hosted on Vercel.
 
 ## Technologies Used
 
-- ReactJS
-- Vite
+- Next.js
 - CSS
 - Vercel
+- Git & GitHub
 
 ## Features
 
@@ -15,12 +16,26 @@ This is my official portfolio website. It is a simple static website built using
 - Dark Mode
 - Contact Form
 
-## Installation
+## Setup &Installation
 
-1. Clone the repository
-2. Run `npm install` to install the dependencies
-3. Run `npm start dev` to start the development server
-4. Open `http://localhost:5173` in your browser
+First, run the development server:
+
+```bash
+npm run dev
+# or
+yarn dev
+# or
+pnpm dev
+# or
+bun dev
+```
+
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+
+You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you  
+edit the file.
+
+This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
 ## License
 
@@ -32,10 +47,10 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## Acknowledgements
 
+- [Next.js](https://nextjs.org)
 - [Vercel](https://vercel.com)
 - [ReactJS](https://reactjs.org)
 - [React Icons](https://react-icons.github.io/react-icons/)
-- [Vite](https://vitejs.dev)
 
 ## Contact
 
@@ -44,3 +59,9 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## Support
 
 If you like this project, please give it a star 🌟. Thank you!
+
+## Deploy on Vercel
+
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
