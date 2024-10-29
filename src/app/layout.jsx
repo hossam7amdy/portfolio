@@ -66,7 +66,7 @@ export default function RootLayout({ children }) {
       <head>
         {/* Favicon and manifest */}
         <link rel="icon" type="image/png" href="/logo192.png" />
-        <link rel="shortcut icon" href="/favicon.ico" />
+        <link rel="icon" href="/favicon.ico" sizes="any" />
         <link rel="manifest" href="/manifest.json" />
         {/* Theme color */}
         <meta name="theme-color" content="#000000" />
