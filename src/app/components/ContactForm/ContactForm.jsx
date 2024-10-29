@@ -31,7 +31,6 @@ export const ContactForm = () => {
           minLength={5}
           maxLength={50}
           name="name"
-          // placeholder="Full Name"
           className={styles.input}
         />
       </div>
@@ -48,7 +47,6 @@ export const ContactForm = () => {
           minLength={5}
           maxLength={50}
           className={styles.input}
-          // placeholder="example@gmail.com"
         />
       </div>
 
@@ -64,7 +62,6 @@ export const ContactForm = () => {
           maxLength={50}
           name="project"
           className={styles.input}
-          // placeholder="Project Name"
         />
       </div>
 
@@ -81,7 +78,6 @@ export const ContactForm = () => {
           minLength={10}
           maxLength={500}
           className={styles.input}
-          // placeholder="Your Message"
         />
       </div>
 
