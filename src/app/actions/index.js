@@ -2,6 +2,7 @@
 
 import { z } from "zod";
 import nodemailer from "nodemailer";
+import template from "./email.template";
 
 const transporter = nodemailer.createTransport({
   service: "gmail",
@@ -37,10 +38,10 @@ export const sendEmail = async (_prevState, formData) => {
   const { name, email, project, message } = validatedFields.data;
 
   const mailOptions = {
-    from: email,
+    from: `Portfolio<${email}>`,
     to: process.env.MAIL_RECIPIENT,
-    subject: `New message from ${name} about ${project}`,
-    text: message,
+    subject: project,
+    html: template(name, message),
   };
 
   try {
