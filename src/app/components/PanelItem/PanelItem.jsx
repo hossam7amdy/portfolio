@@ -1,17 +1,10 @@
-import { BiLinkExternal } from "react-icons/bi";
-import { IoCalendarOutline } from "react-icons/io5";
+import { BiLinkExternal } from 'react-icons/bi';
+import { IoCalendarOutline } from 'react-icons/io5';
 
-import styles from "./PanelItem.module.css";
-import { IconLink } from "../UI/IconLink/IconLink";
+import styles from './PanelItem.module.css';
+import { IconLink } from '../UI/IconLink/IconLink';
 
-export const PanelItem = ({
-  title,
-  subtitle,
-  date,
-  text,
-  link,
-  trackOnLeft,
-}) => {
+export const PanelItem = ({ title, subtitle, date, text, link, trackOnLeft }) => {
   return (
     <div className={styles.content}>
       {trackOnLeft && <div></div>}

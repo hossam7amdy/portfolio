@@ -1,4 +1,4 @@
-import styles from "./SectionTitle.module.css";
+import styles from './SectionTitle.module.css';
 
 export const SectionTitle = ({ title, subtitle }) => {
   return (

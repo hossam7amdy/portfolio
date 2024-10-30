@@ -1,22 +1,22 @@
-"use client";
+'use client';
 
-import { useEffect } from "react";
-import { createContext, useState } from "react";
+import { useEffect } from 'react';
+import { createContext, useState } from 'react';
 
 export const ThemeContext = createContext({
-  theme: "",
+  theme: '',
   toggleTheme: () => {},
 });
 
-export const ThemeProvider = (props) => {
+export const ThemeProvider = props => {
   const [theme, setTheme] = useState();
 
   useEffect(() => {
-    if (typeof window === "undefined") return;
+    if (typeof window === 'undefined') return;
 
-    const localTheme = localStorage.getItem("theme") ?? "light";
+    const localTheme = localStorage.getItem('theme') ?? 'light';
 
-    localStorage.setItem("theme", localTheme);
+    localStorage.setItem('theme', localTheme);
 
     setTheme(localTheme);
   }, []);
@@ -24,15 +24,15 @@ export const ThemeProvider = (props) => {
   useEffect(() => {
     if (!theme) return;
 
-    const isLight = theme === "light";
+    const isLight = theme === 'light';
 
-    document.body.classList[isLight ? "remove" : "add"]("dark-theme");
+    document.body.classList[isLight ? 'remove' : 'add']('dark-theme');
   }, [theme]);
 
   const toggleTheme = () => {
-    const newTheme = theme === "light" ? "dark" : "light";
+    const newTheme = theme === 'light' ? 'dark' : 'light';
 
-    localStorage.setItem("theme", newTheme);
+    localStorage.setItem('theme', newTheme);
 
     setTheme(newTheme);
   };
@@ -42,9 +42,5 @@ export const ThemeProvider = (props) => {
     toggleTheme,
   };
 
-  return (
-    <ThemeContext.Provider value={themeProvider}>
-      {props.children}
-    </ThemeContext.Provider>
-  );
+  return <ThemeContext.Provider value={themeProvider}>{props.children}</ThemeContext.Provider>;
 };

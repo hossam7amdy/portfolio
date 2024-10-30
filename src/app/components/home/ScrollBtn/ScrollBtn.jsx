@@ -1,6 +1,6 @@
-import styles from "./ScrollBtn.module.css";
-import { TfiMouse } from "react-icons/tfi";
-import { TiArrowDown } from "react-icons/ti";
+import styles from './ScrollBtn.module.css';
+import { TfiMouse } from 'react-icons/tfi';
+import { TiArrowDown } from 'react-icons/ti';
 
 export const ScrollBtn = () => {
   return (

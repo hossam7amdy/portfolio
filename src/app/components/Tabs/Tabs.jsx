@@ -1,10 +1,10 @@
-"use client";
+'use client';
 
-import { createContext, useState } from "react";
+import { createContext, useState } from 'react';
 
 export const TabContext = createContext({
   activeTab: 0,
-  setActiveTab: (tabIndex) => {},
+  setActiveTab: tabIndex => {},
 });
 
 export const Tabs = ({ children }) => {
@@ -12,10 +12,8 @@ export const Tabs = ({ children }) => {
 
   const tabContext = {
     activeTab,
-    setActiveTab: (tabIndex) => setActiveTab(tabIndex),
+    setActiveTab: tabIndex => setActiveTab(tabIndex),
   };
 
-  return (
-    <TabContext.Provider value={tabContext}>{children}</TabContext.Provider>
-  );
+  return <TabContext.Provider value={tabContext}>{children}</TabContext.Provider>;
 };

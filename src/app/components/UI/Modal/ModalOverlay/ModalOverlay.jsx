@@ -1,24 +1,18 @@
-import { CSSTransition } from "react-transition-group";
+import { CSSTransition } from 'react-transition-group';
 
-import { Card } from "../../Card/Card";
-import styles from "./ModalOverlay.module.css";
+import { Card } from '../../Card/Card';
+import styles from './ModalOverlay.module.css';
 
 export const ModalOverlay = ({ header, body, onClose, isOpen }) => {
   const classes = {
-    enter: "",
+    enter: '',
     enterActive: styles.modalOpen,
-    exit: "",
+    exit: '',
     exitActive: styles.modalClosed,
   };
 
   return (
-    <CSSTransition
-      mountOnEnter
-      unmountOnExit
-      in={isOpen}
-      timeout={400}
-      classNames={classes}
-    >
+    <CSSTransition mountOnEnter unmountOnExit in={isOpen} timeout={400} classNames={classes}>
       <Card className={styles.modal}>
         <header className={styles.header}>
           <h2>{header}</h2>

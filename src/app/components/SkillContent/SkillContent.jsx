@@ -1,17 +1,17 @@
-"use client";
+'use client';
 
-import { useState } from "react";
+import { useState } from 'react';
 
-import styles from "./SkillContent.module.css";
+import styles from './SkillContent.module.css';
 
-import { SkillItem } from "./SkillItem";
-import { MdKeyboardArrowDown } from "react-icons/md";
+import { SkillItem } from './SkillItem';
+import { MdKeyboardArrowDown } from 'react-icons/md';
 
 export const SkillContent = ({ Icon, title, subtitle, content }) => {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleOpen = () => {
-    setIsOpen((prev) => !prev);
+    setIsOpen(prev => !prev);
   };
 
   return (
@@ -25,9 +25,7 @@ export const SkillContent = ({ Icon, title, subtitle, content }) => {
         </div>
 
         <MdKeyboardArrowDown
-          className={`${styles.icon} ${styles.arrowIcon} ${
-            isOpen ? styles.rotate : ""
-          }`}
+          className={`${styles.icon} ${styles.arrowIcon} ${isOpen ? styles.rotate : ''}`}
         />
       </button>
 

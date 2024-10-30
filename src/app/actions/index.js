@@ -1,10 +1,11 @@
-"use server";
+'use server';
 
-import { z } from "zod";
-import nodemailer from "nodemailer";
+import { z } from 'zod';
+import nodemailer from 'nodemailer';
+import template from './email.template';
 
 const transporter = nodemailer.createTransport({
-  service: "gmail",
+  service: 'gmail',
   secure: true,
   auth: {
     user: process.env.MAIL_USER,
@@ -21,26 +22,26 @@ const FormSchema = z.object({
 
 export const sendEmail = async (_prevState, formData) => {
   const validatedFields = FormSchema.safeParse({
-    name: formData.get("name"),
-    email: formData.get("email"),
-    project: formData.get("project"),
-    message: formData.get("message"),
+    name: formData.get('name'),
+    email: formData.get('email'),
+    project: formData.get('project'),
+    message: formData.get('message'),
   });
 
   if (!validatedFields.success) {
     return {
       errors: validatedFields.error.flatten().fieldErrors,
-      message: "Missing Fields. Failed to send an email.",
+      message: 'Missing Fields. Failed to send an email.',
     };
   }
 
   const { name, email, project, message } = validatedFields.data;
 
   const mailOptions = {
-    from: email,
+    from: `Portfolio<${email}>`,
     to: process.env.MAIL_RECIPIENT,
-    subject: `New message from ${name} about ${project}`,
-    text: message,
+    subject: project,
+    html: template(name, message),
   };
 
   try {
@@ -50,7 +51,7 @@ export const sendEmail = async (_prevState, formData) => {
     };
   } catch (error) {
     return {
-      message: "Failed to send an email.",
+      message: 'Failed to send an email.',
     };
   }
 };

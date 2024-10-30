@@ -1,11 +1,11 @@
-import styles from "./Skills.module.css";
+import styles from './Skills.module.css';
 
-import { SKILLS } from "../../data/data";
+import { SKILLS } from '../../data/data';
 
-import { SectionTitle } from "../../components/SectionTitle/SectionTitle";
-import { SkillContent } from "../../components/SkillContent/SkillContent";
-import { Section } from "../../layout/Section/Section";
-import { Container } from "../../layout/Container/Container";
+import { SectionTitle } from '../../components/SectionTitle/SectionTitle';
+import { SkillContent } from '../../components/SkillContent/SkillContent';
+import { Section } from '../../layout/Section/Section';
+import { Container } from '../../layout/Container/Container';
 
 export const Skills = () => {
   return (

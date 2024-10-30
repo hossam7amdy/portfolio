@@ -1,12 +1,12 @@
-import styles from "./ContactItem.module.css";
+import styles from './ContactItem.module.css';
 
 const hrefUrl = (name, contact) => {
-  if (name === "Contact Me") {
+  if (name === 'Contact Me') {
     return `tel:${contact}`;
-  } else if (name === "Email") {
+  } else if (name === 'Email') {
     return `mailto:${contact}`;
   }
-  return "#contactme";
+  return '#contactme';
 };
 
 export const ContactItem = ({ Icon, title, subtitle }) => {

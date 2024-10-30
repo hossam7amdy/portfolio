@@ -1,9 +1,9 @@
-import { AiFillGithub } from "react-icons/ai";
-import { FaFacebookF } from "react-icons/fa";
-import { GrLinkedinOption } from "react-icons/gr";
+import { AiFillGithub } from 'react-icons/ai';
+import { FaFacebookF } from 'react-icons/fa';
+import { GrLinkedinOption } from 'react-icons/gr';
 
-import styles from "./Footer.module.css";
-import { IconLink } from "../../components/UI/IconLink/IconLink";
+import styles from './Footer.module.css';
+import { IconLink } from '../../components/UI/IconLink/IconLink';
 
 export const Footer = () => {
   return (

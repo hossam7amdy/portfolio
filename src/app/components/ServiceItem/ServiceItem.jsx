@@ -1,19 +1,19 @@
-"use client";
+'use client';
 
-import { useState } from "react";
-import { BsArrowRightShort } from "react-icons/bs";
-import { AiOutlineCheckCircle } from "react-icons/ai";
+import { useState } from 'react';
+import { BsArrowRightShort } from 'react-icons/bs';
+import { AiOutlineCheckCircle } from 'react-icons/ai';
 
-import styles from "./ServiceItem.module.css";
-import { Card } from "../UI/Card/Card";
-import { Modal } from "../UI/Modal/Modal";
+import styles from './ServiceItem.module.css';
+import { Card } from '../UI/Card/Card';
+import { Modal } from '../UI/Modal/Modal';
 
-const ContentList = (content) => {
+const ContentList = content => {
   return (
     <ul>
       {content.map((item, idx) => (
-        <li key={idx} className={styles["service-item"]}>
-          <AiOutlineCheckCircle className={styles["item-icon"]} /> {item}
+        <li key={idx} className={styles['service-item']}>
+          <AiOutlineCheckCircle className={styles['item-icon']} /> {item}
         </li>
       ))}
     </ul>
@@ -31,8 +31,8 @@ export const ServiceItem = ({ Icon, title, content }) => {
     setIsOpen(false);
   };
 
-  const titleArr = title.split(" ");
-  const secondLine = titleArr.slice(1).join(" ");
+  const titleArr = title.split(' ');
+  const secondLine = titleArr.slice(1).join(' ');
 
   const body = ContentList(content);
 
@@ -45,7 +45,7 @@ export const ServiceItem = ({ Icon, title, content }) => {
           {titleArr[0]} <br /> {secondLine}
         </h3>
         <button aria-label="open modal" className={styles.btn} onClick={onOpen}>
-          View more <BsArrowRightShort className={styles["btn-icon"]} />
+          View more <BsArrowRightShort className={styles['btn-icon']} />
         </button>
       </Card>
     </>
