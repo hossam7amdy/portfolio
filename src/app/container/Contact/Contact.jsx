@@ -1,11 +1,11 @@
-import styles from "./Contact.module.css";
+import styles from './Contact.module.css';
 
-import { SectionTitle } from "../../components/SectionTitle/SectionTitle";
-import { ContactForm } from "../../components/ContactForm/ContactForm";
-import { ContactItem } from "../../components/ContactItem/ContactItem";
-import { Container } from "../../layout/Container/Container";
-import { Section } from "../../layout/Section/Section";
-import { CONTACT } from "../../data/data";
+import { SectionTitle } from '../../components/SectionTitle/SectionTitle';
+import { ContactForm } from '../../components/ContactForm/ContactForm';
+import { ContactItem } from '../../components/ContactItem/ContactItem';
+import { Container } from '../../layout/Container/Container';
+import { Section } from '../../layout/Section/Section';
+import { CONTACT } from '../../data/data';
 
 export const Contact = () => {
   return (
@@ -14,12 +14,7 @@ export const Contact = () => {
       <Container className={`${styles.container} grid`}>
         <div className={styles.contact}>
           {CONTACT.map((item, idx) => (
-            <ContactItem
-              key={idx}
-              Icon={item.Icon}
-              title={item.title}
-              subtitle={item.subtitle}
-            />
+            <ContactItem key={idx} Icon={item.Icon} title={item.title} subtitle={item.subtitle} />
           ))}
         </div>
         <ContactForm />

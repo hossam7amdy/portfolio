@@ -1,25 +1,22 @@
-import { CiMedal } from "react-icons/ci";
-import { FaHackerrank } from "react-icons/fa";
-import { BiCertification } from "react-icons/bi";
-import { SiLeetcode, SiCodeforces, SiUdemy } from "react-icons/si";
+import { CiMedal } from 'react-icons/ci';
+import { FaHackerrank } from 'react-icons/fa';
+import { BiCertification } from 'react-icons/bi';
+import { SiLeetcode, SiCodeforces, SiUdemy } from 'react-icons/si';
 
-import { SectionTitle } from "../../components/SectionTitle/SectionTitle";
-import { PanelItem } from "../../components/PanelItem/PanelItem";
-import { TabPanels } from "../../components/Tabs/TabPanels/TabPanels";
-import { Container } from "../../layout/Container/Container";
-import { Section } from "../../layout/Section/Section";
-import { TabList } from "../../components/Tabs/TabList/TabList";
-import { Panel } from "../../components/Tabs/Panel/Panel";
-import { Tabs } from "../../components/Tabs/Tabs";
-import { Tab } from "../../components/Tabs/Tab/Tab";
+import { SectionTitle } from '../../components/SectionTitle/SectionTitle';
+import { PanelItem } from '../../components/PanelItem/PanelItem';
+import { TabPanels } from '../../components/Tabs/TabPanels/TabPanels';
+import { Container } from '../../layout/Container/Container';
+import { Section } from '../../layout/Section/Section';
+import { TabList } from '../../components/Tabs/TabList/TabList';
+import { Panel } from '../../components/Tabs/Panel/Panel';
+import { Tabs } from '../../components/Tabs/Tabs';
+import { Tab } from '../../components/Tabs/Tab/Tab';
 
 export const Achievements = () => {
   return (
     <Section>
-      <SectionTitle
-        title="Achievements"
-        subtitle="Consistency leads to great achievements"
-      />
+      <SectionTitle title="Achievements" subtitle="Consistency leads to great achievements" />
 
       <Container centerContent={true}>
         <Tabs>

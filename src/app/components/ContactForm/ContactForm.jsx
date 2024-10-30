@@ -1,11 +1,11 @@
-"use client";
+'use client';
 
-import { useRef } from "react";
-import { useFormStatus, useFormState } from "react-dom";
-import { RiMailSendLine } from "react-icons/ri";
+import { useRef } from 'react';
+import { useFormStatus, useFormState } from 'react-dom';
+import { RiMailSendLine } from 'react-icons/ri';
 
-import styles from "./ContactForm.module.css";
-import { sendEmail } from "../../actions";
+import styles from './ContactForm.module.css';
+import { sendEmail } from '../../actions';
 
 const initialState = { message: null, errors: {} };
 
@@ -13,7 +13,7 @@ export const ContactForm = () => {
   const formRef = useRef(null);
   const [state, dispatch] = useFormState(sendEmail, initialState);
 
-  const handleSubmit = async (formData) => {
+  const handleSubmit = async formData => {
     dispatch(formData);
     formRef.current?.reset();
   };
@@ -82,7 +82,7 @@ export const ContactForm = () => {
       </div>
 
       {state.message && (
-        <p style={{ color: "red", padding: 5 }} key={state.message}>
+        <p style={{ color: 'red', padding: 5 }} key={state.message}>
           {state.message}
         </p>
       )}
@@ -97,8 +97,7 @@ const SubmitButton = () => {
 
   return (
     <button type="submit" className={styles.btn} disabled={pending}>
-      {pending ? "Sending..." : "Send Message"}{" "}
-      <RiMailSendLine className={styles.icon} />
+      {pending ? 'Sending...' : 'Send Message'} <RiMailSendLine className={styles.icon} />
     </button>
   );
 };

@@ -1,8 +1,8 @@
-import { BiSend } from "react-icons/bi";
-import { IconLink } from "../../UI/IconLink/IconLink";
-import { ScrollBtn } from "../ScrollBtn/ScrollBtn";
+import { BiSend } from 'react-icons/bi';
+import { IconLink } from '../../UI/IconLink/IconLink';
+import { ScrollBtn } from '../ScrollBtn/ScrollBtn';
 
-import styles from "./Content.module.css";
+import styles from './Content.module.css';
 
 export const Content = () => {
   return (

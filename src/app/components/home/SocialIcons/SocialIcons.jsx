@@ -1,8 +1,8 @@
-import { FiGithub } from "react-icons/fi";
-import { SlSocialLinkedin } from "react-icons/sl";
-import { IconLink } from "../../UI/IconLink/IconLink";
+import { FiGithub } from 'react-icons/fi';
+import { SlSocialLinkedin } from 'react-icons/sl';
+import { IconLink } from '../../UI/IconLink/IconLink';
 
-import styles from "./SocialIcons.module.css";
+import styles from './SocialIcons.module.css';
 
 export const SocialIcons = () => {
   return (
