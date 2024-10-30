@@ -1,9 +1,6 @@
 name: CI
 
 on:
-  push:
-    branches:
-      - "**" # Push to any branch
   pull_request:
     branches:
       - main # Pull request to main branch
