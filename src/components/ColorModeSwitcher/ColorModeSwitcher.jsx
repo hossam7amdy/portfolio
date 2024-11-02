@@ -3,7 +3,7 @@ import { useContext } from 'react';
 import { BiSun } from 'react-icons/bi';
 import { HiOutlineMoon } from 'react-icons/hi';
 
-import { ThemeContext } from '../../context/theme';
+import { ThemeContext } from '@/context/theme';
 
 export const ColorModeSwitcher = ({ className }) => {
   const { theme, toggleTheme } = useContext(ThemeContext);

@@ -5,7 +5,7 @@ import { useFormStatus, useFormState } from 'react-dom';
 import { RiMailSendLine } from 'react-icons/ri';
 
 import styles from './ContactForm.module.css';
-import { sendEmail } from '../../actions';
+import { sendEmail } from '@/actions';
 
 const initialState = { message: null, errors: {} };
 

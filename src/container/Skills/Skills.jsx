@@ -1,6 +1,6 @@
 import styles from './Skills.module.css';
 
-import { SKILLS } from '../../data/data';
+import { SKILLS } from '@/data/data';
 
 import { SectionTitle } from '../../components/SectionTitle/SectionTitle';
 import { SkillContent } from '../../components/SkillContent/SkillContent';

@@ -1,6 +1,6 @@
 import styles from './Services.module.css';
 
-import { SERVICES_LIST } from '../../data/data';
+import { SERVICES_LIST } from '@/data/data';
 import { SectionTitle } from '../../components/SectionTitle/SectionTitle';
 import { ServiceItem } from '../../components/ServiceItem/ServiceItem';
 import { Container } from '../../layout/Container/Container';

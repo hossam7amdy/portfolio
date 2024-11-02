@@ -5,7 +5,7 @@ import { ContactForm } from '../../components/ContactForm/ContactForm';
 import { ContactItem } from '../../components/ContactItem/ContactItem';
 import { Container } from '../../layout/Container/Container';
 import { Section } from '../../layout/Section/Section';
-import { CONTACT } from '../../data/data';
+import { CONTACT } from '@/data/data';
 
 export const Contact = () => {
   return (

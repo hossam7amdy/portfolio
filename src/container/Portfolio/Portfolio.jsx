@@ -5,7 +5,7 @@ import { MdKeyboardArrowLeft, MdKeyboardArrowRight } from 'react-icons/md';
 
 import styles from './Portfolio.module.css';
 import { Section } from '../../layout/Section/Section';
-import { PROJECTS } from '../../data/data';
+import { PROJECTS } from '@/data/data';
 import { Container } from '../../layout/Container/Container';
 import { SectionTitle } from '../../components/SectionTitle/SectionTitle';
 import { PortfolioItem } from '../../components/PortfolioItem/PortfolioItem';
