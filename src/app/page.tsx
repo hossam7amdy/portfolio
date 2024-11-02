@@ -11,7 +11,7 @@ import {
   Portfolio,
   Contact,
   Footer,
-} from './container';
+} from '../container';
 
 import styles from './page.module.css';
 

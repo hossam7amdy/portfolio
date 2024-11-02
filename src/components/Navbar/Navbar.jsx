@@ -1,9 +1,9 @@
 import { CgClose } from 'react-icons/cg';
 
 import styles from './Navbar.module.css';
-import { NAV_LIST } from '../../data/data';
+import { NAV_LIST } from '@/data/data';
 import Link from 'next/link';
-import { useActiveSection } from '../../hooks/useActiveSection';
+import { useActiveSection } from '@/hooks/useActiveSection';
 
 export const Navbar = ({ show, onClose }) => {
   const activeSection = useActiveSection(

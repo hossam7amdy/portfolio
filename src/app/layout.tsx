@@ -2,7 +2,7 @@ import { Analytics } from '@vercel/analytics/react';
 import { SpeedInsights } from '@vercel/speed-insights/react';
 import { GoogleAnalytics } from '@next/third-parties/google';
 import { Inter } from 'next/font/google';
-import { ThemeProvider } from './context/theme';
+import { ThemeProvider } from '../context/theme';
 
 import './globals.css';
 
@@ -52,7 +52,6 @@ export const metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    url: 'https://hossamhamdy.me/',
     title: 'Hossam Hamdy — Full Stack Developer',
     description:
       'Hossam Hamdy is a dynamic Full Stack Developer specializing in the MERN stack, renowned for crafting innovative and efficient web solutions. With a robust portfolio showcasing diverse projects, Hossam blends technical expertise with creative problem-solving to deliver seamless digital experiences. Whether building responsive user interfaces or optimizing back-end performance, Hossam is dedicated to pushing the boundaries of web development. Explore my portfolio to see how I can bring your vision to life with cutting-edge technology and design.',
