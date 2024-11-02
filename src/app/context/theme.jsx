@@ -1,46 +1,31 @@
 'use client';
 
-import { useEffect } from 'react';
-import { createContext, useState } from 'react';
+import { createContext, useState, useEffect, useRef } from 'react';
 
 export const ThemeContext = createContext({
   theme: '',
   toggleTheme: () => {},
 });
 
-export const ThemeProvider = props => {
-  const [theme, setTheme] = useState();
+export const ThemeProvider = ({ children }) => {
+  const [theme, setTheme] = useState(undefined);
+  const themeLoaded = useRef(false);
 
   useEffect(() => {
-    if (typeof window === 'undefined') return;
-
-    const localTheme = localStorage.getItem('theme') ?? 'light';
-
-    localStorage.setItem('theme', localTheme);
-
+    const localTheme = localStorage.getItem('theme') || 'light';
     setTheme(localTheme);
+    document.body.classList.toggle('dark-theme', localTheme === 'dark');
+    themeLoaded.current = true;
   }, []);
-
-  useEffect(() => {
-    if (!theme) return;
-
-    const isLight = theme === 'light';
-
-    document.body.classList[isLight ? 'remove' : 'add']('dark-theme');
-  }, [theme]);
 
   const toggleTheme = () => {
     const newTheme = theme === 'light' ? 'dark' : 'light';
-
-    localStorage.setItem('theme', newTheme);
-
     setTheme(newTheme);
+    document.body.classList.toggle('dark-theme', newTheme === 'dark');
+    localStorage.setItem('theme', newTheme);
   };
 
-  const themeProvider = {
-    theme,
-    toggleTheme,
-  };
+  if (!themeLoaded.current) return null; // Avoid flicker by not rendering until theme is loaded
 
-  return <ThemeContext.Provider value={themeProvider}>{props.children}</ThemeContext.Provider>;
+  return <ThemeContext.Provider value={{ theme, toggleTheme }}>{children}</ThemeContext.Provider>;
 };
