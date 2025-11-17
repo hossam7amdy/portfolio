@@ -27,7 +27,7 @@
     "@types/nodemailer": "^6.4.16",
     "@types/react": "18.3.12",
     "eslint": "^8",
-    "eslint-config-next": "14.2.5",
+    "eslint-config-next": "16.0.3",
     "husky": "^9.1.6",
     "lint-staged": "^15.2.10",
     "prettier": "3.3.3"
